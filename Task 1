@@ -1,0 +1,67 @@
+# Step 1: Create React App
+npx create-react-app Task1
+cd my-react-app
+
+# Step 2: Commit the code
+git init
+git add .
+git commit -m "Initial commit"
+
+# Step 3: Create GitHub Repository using GitHub CLI
+gh repo create Task1-app
+
+# Step 4: Switch to "update_logo" branch
+git checkout -b update_logo
+
+# Step 5: Replace existing logo with the new one
+# (Manually replace the logo in your project directory)
+
+# Step 6: Replace existing link in the code
+# (Manually update the link in your project code)
+
+# Step 7: Commit and push the code
+git add .
+git commit -m "Update logo and link"
+git push origin update_logo
+
+# Step 8: Create PR from "update_logo" to "master" branch using GitHub CLI
+gh pr create --base master --head update_logo --title "Update Logo and Link" --body "This PR updates the logo and link."
+
+# Step 9: Merge the PR using GitHub CLI
+gh pr merge <PR_NUMBER> --merge
+
+# Step 10: List all commands in "command.sh"
+echo "# Step 1: Create React App" >> command.sh
+echo "npx create-react-app my-react-app" >> command.sh
+echo "cd my-react-app" >> command.sh
+echo "" >> command.sh
+echo "# Step 2: Commit the code" >> command.sh
+echo "git init" >> command.sh
+echo "git add ." >> command.sh
+echo 'git commit -m "Initial commit"' >> command.sh
+echo "" >> command.sh
+echo "# Step 3: Create GitHub Repository using GitHub CLI" >> command.sh
+echo "gh repo create my-react-app" >> command.sh
+echo "" >> command.sh
+echo "# Step 4: Switch to 'update_logo' branch" >> command.sh
+echo "git checkout -b update_logo" >> command.sh
+echo "" >> command.sh
+echo "# Step 5: Replace existing logo with the new one" >> command.sh
+echo "# (Manually replace the logo in your project directory)" >> command.sh
+echo "" >> command.sh
+echo "# Step 6: Replace existing link in the code" >> command.sh
+echo "# (Manually update the link in your project code)" >> command.sh
+echo "" >> command.sh
+echo "# Step 7: Commit and push the code" >> command.sh
+echo "git add ." >> command.sh
+echo 'git commit -m "Update logo and link"' >> command.sh
+echo "git push origin update_logo" >> command.sh
+echo "" >> command.sh
+echo "# Step 8: Create PR from 'update_logo' to 'master' branch using GitHub CLI" >> command.sh
+echo 'gh pr create --base master --head update_logo --title "Update Logo and Link" --body "This PR updates the logo and link."' >> command.sh
+echo "" >> command.sh
+echo "# Step 9: Merge the PR using GitHub CLI" >> command.sh
+echo "gh pr merge <PR_NUMBER> --merge" >> command.sh
+echo "" >> command.sh
+echo "# Step 10: Add the link of your GitHub repository" >> command.sh
+echo "# REPO_URL <github_url>" >> command.sh
